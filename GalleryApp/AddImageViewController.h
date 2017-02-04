@@ -1,5 +1,5 @@
 //
-//  LoginViewController.h
+//  AddImageViewController.h
 //  GalleryApp
 //
 //  Created by Raees Shaikh on 04/02/17.
@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+@class User;
 
-@interface LoginViewController : UIViewController
-
+@interface AddImageViewController : UIViewController
+@property (strong,nonatomic) User *userObj;
 @end

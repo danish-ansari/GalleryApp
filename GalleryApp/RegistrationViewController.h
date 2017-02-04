@@ -1,5 +1,5 @@
 //
-//  LoginViewController.h
+//  RegistrationViewController.h
 //  GalleryApp
 //
 //  Created by Raees Shaikh on 04/02/17.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface LoginViewController : UIViewController
+@interface RegistrationViewController : UIViewController
 
 @end

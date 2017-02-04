@@ -13,7 +13,10 @@
 		2228DA831E44876300664270 /* GalleryApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2228DA811E44876300664270 /* GalleryApp.xcdatamodeld */; };
 		2228DA851E44876300664270 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2228DA841E44876300664270 /* Assets.xcassets */; };
 		2228DA881E44876300664270 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2228DA861E44876300664270 /* LaunchScreen.storyboard */; };
-		2228DA931E448E6900664270 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2228DA921E448E6900664270 /* LoginViewController.m */; };
+		2237AB7F1E45E91E0038A32E /* UITextField+Validation.m in Sources */ = {isa = PBXBuildFile; fileRef = 2237AB7E1E45E91E0038A32E /* UITextField+Validation.m */; };
+		22E1568C1E462B460086FA87 /* RegistrationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22E1568B1E462B460086FA87 /* RegistrationViewController.m */; };
+		22E1568F1E462BF50086FA87 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22E1568E1E462BF50086FA87 /* LoginViewController.m */; };
+		22E156921E46358F0086FA87 /* AddImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22E156911E46358F0086FA87 /* AddImageViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,8 +29,14 @@
 		2228DA841E44876300664270 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2228DA871E44876300664270 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2228DA891E44876300664270 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		2228DA911E448E6900664270 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
-		2228DA921E448E6900664270 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		2237AB7D1E45E91E0038A32E /* UITextField+Validation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextField+Validation.h"; sourceTree = "<group>"; };
+		2237AB7E1E45E91E0038A32E /* UITextField+Validation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextField+Validation.m"; sourceTree = "<group>"; };
+		22E1568A1E462B460086FA87 /* RegistrationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegistrationViewController.h; sourceTree = "<group>"; };
+		22E1568B1E462B460086FA87 /* RegistrationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegistrationViewController.m; sourceTree = "<group>"; };
+		22E1568D1E462BF50086FA87 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		22E1568E1E462BF50086FA87 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		22E156901E46358F0086FA87 /* AddImageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddImageViewController.h; sourceTree = "<group>"; };
+		22E156911E46358F0086FA87 /* AddImageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddImageViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +69,9 @@
 		2228DA741E44876300664270 /* GalleryApp */ = {
 			isa = PBXGroup;
 			children = (
+				22FCF8141E45FD9100F33E01 /* Helper */,
+				22FCF8131E45FD4800F33E01 /* ManagedObjectSubclass */,
+				2237AB7C1E45E8C10038A32E /* Categories */,
 				2228DA8F1E448DD400664270 /* ViewControllers */,
 				2228DA901E448DE300664270 /* Storyboards */,
 				2228DA781E44876300664270 /* AppDelegate.h */,
@@ -83,8 +95,12 @@
 		2228DA8F1E448DD400664270 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				2228DA911E448E6900664270 /* LoginViewController.h */,
-				2228DA921E448E6900664270 /* LoginViewController.m */,
+				22E1568A1E462B460086FA87 /* RegistrationViewController.h */,
+				22E1568B1E462B460086FA87 /* RegistrationViewController.m */,
+				22E1568D1E462BF50086FA87 /* LoginViewController.h */,
+				22E1568E1E462BF50086FA87 /* LoginViewController.m */,
+				22E156901E46358F0086FA87 /* AddImageViewController.h */,
+				22E156911E46358F0086FA87 /* AddImageViewController.m */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -96,6 +112,29 @@
 				2228DA861E44876300664270 /* LaunchScreen.storyboard */,
 			);
 			name = Storyboards;
+			sourceTree = "<group>";
+		};
+		2237AB7C1E45E8C10038A32E /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				2237AB7D1E45E91E0038A32E /* UITextField+Validation.h */,
+				2237AB7E1E45E91E0038A32E /* UITextField+Validation.m */,
+			);
+			name = Categories;
+			sourceTree = "<group>";
+		};
+		22FCF8131E45FD4800F33E01 /* ManagedObjectSubclass */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = ManagedObjectSubclass;
+			sourceTree = "<group>";
+		};
+		22FCF8141E45FD9100F33E01 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Helper;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -169,7 +208,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2228DA931E448E6900664270 /* LoginViewController.m in Sources */,
+				22E1568C1E462B460086FA87 /* RegistrationViewController.m in Sources */,
+				2237AB7F1E45E91E0038A32E /* UITextField+Validation.m in Sources */,
+				22E1568F1E462BF50086FA87 /* LoginViewController.m in Sources */,
+				22E156921E46358F0086FA87 /* AddImageViewController.m in Sources */,
 				2228DA831E44876300664270 /* GalleryApp.xcdatamodeld in Sources */,
 				2228DA7A1E44876300664270 /* AppDelegate.m in Sources */,
 				2228DA771E44876300664270 /* main.m in Sources */,

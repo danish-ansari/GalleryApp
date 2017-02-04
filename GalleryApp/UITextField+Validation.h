@@ -1,5 +1,5 @@
 //
-//  LoginViewController.h
+//  UITextField+Validation.h
 //  GalleryApp
 //
 //  Created by Raees Shaikh on 04/02/17.
@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface LoginViewController : UIViewController
-
+@interface UITextField (Validation)
+-(BOOL) isEmpty;
+-(BOOL) isValidEmail;
 @end
