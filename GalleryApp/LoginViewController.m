@@ -91,6 +91,7 @@
         User *userObj = sender;
         AddImageViewController *addViewController = [segue destinationViewController];
         addViewController.userObj = userObj;
+        addViewController.context = _context;
     }
 }
 

@@ -232,8 +232,8 @@
         [userObj setZipCode:_zipCodeTextField.text];
         [userObj setImage:imageData];
         [_delegate saveContext];
-        [self showAlertWithTitle:@"Success" andMessage:@"User registered"];
         [self performSegueWithIdentifier:@"registerSuccessSegue" sender:userObj];
+        [self showAlertWithTitle:@"Success" andMessage:@"User registered"];
     }
 }
 
@@ -242,6 +242,7 @@
         User *userObj = sender;
         AddImageViewController *addViewController = [segue destinationViewController];
         addViewController.userObj = userObj;
+        addViewController.context = _context;
     }
 }
 

@@ -14,6 +14,7 @@
 		2228DA851E44876300664270 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2228DA841E44876300664270 /* Assets.xcassets */; };
 		2228DA881E44876300664270 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2228DA861E44876300664270 /* LaunchScreen.storyboard */; };
 		2237AB7F1E45E91E0038A32E /* UITextField+Validation.m in Sources */ = {isa = PBXBuildFile; fileRef = 2237AB7E1E45E91E0038A32E /* UITextField+Validation.m */; };
+		228EB8EC1E484DC90058EFE3 /* ImageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 228EB8EB1E484DC80058EFE3 /* ImageCell.m */; };
 		22E1568C1E462B460086FA87 /* RegistrationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22E1568B1E462B460086FA87 /* RegistrationViewController.m */; };
 		22E1568F1E462BF50086FA87 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22E1568E1E462BF50086FA87 /* LoginViewController.m */; };
 		22E156921E46358F0086FA87 /* AddImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22E156911E46358F0086FA87 /* AddImageViewController.m */; };
@@ -31,6 +32,8 @@
 		2228DA891E44876300664270 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2237AB7D1E45E91E0038A32E /* UITextField+Validation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextField+Validation.h"; sourceTree = "<group>"; };
 		2237AB7E1E45E91E0038A32E /* UITextField+Validation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextField+Validation.m"; sourceTree = "<group>"; };
+		228EB8EA1E484DC80058EFE3 /* ImageCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageCell.h; sourceTree = "<group>"; };
+		228EB8EB1E484DC80058EFE3 /* ImageCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageCell.m; sourceTree = "<group>"; };
 		22E1568A1E462B460086FA87 /* RegistrationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegistrationViewController.h; sourceTree = "<group>"; };
 		22E1568B1E462B460086FA87 /* RegistrationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegistrationViewController.m; sourceTree = "<group>"; };
 		22E1568D1E462BF50086FA87 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
@@ -70,7 +73,7 @@
 			isa = PBXGroup;
 			children = (
 				22FCF8141E45FD9100F33E01 /* Helper */,
-				22FCF8131E45FD4800F33E01 /* ManagedObjectSubclass */,
+				22FCF8131E45FD4800F33E01 /* CustomCells */,
 				2237AB7C1E45E8C10038A32E /* Categories */,
 				2228DA8F1E448DD400664270 /* ViewControllers */,
 				2228DA901E448DE300664270 /* Storyboards */,
@@ -123,11 +126,13 @@
 			name = Categories;
 			sourceTree = "<group>";
 		};
-		22FCF8131E45FD4800F33E01 /* ManagedObjectSubclass */ = {
+		22FCF8131E45FD4800F33E01 /* CustomCells */ = {
 			isa = PBXGroup;
 			children = (
+				228EB8EA1E484DC80058EFE3 /* ImageCell.h */,
+				228EB8EB1E484DC80058EFE3 /* ImageCell.m */,
 			);
-			name = ManagedObjectSubclass;
+			name = CustomCells;
 			sourceTree = "<group>";
 		};
 		22FCF8141E45FD9100F33E01 /* Helper */ = {
@@ -209,6 +214,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				22E1568C1E462B460086FA87 /* RegistrationViewController.m in Sources */,
+				228EB8EC1E484DC90058EFE3 /* ImageCell.m in Sources */,
 				2237AB7F1E45E91E0038A32E /* UITextField+Validation.m in Sources */,
 				22E1568F1E462BF50086FA87 /* LoginViewController.m in Sources */,
 				22E156921E46358F0086FA87 /* AddImageViewController.m in Sources */,

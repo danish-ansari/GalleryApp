@@ -11,4 +11,5 @@
 
 @interface AddImageViewController : UIViewController
 @property (strong,nonatomic) User *userObj;
+@property (strong, nonatomic) NSManagedObjectContext *context;
 @end
